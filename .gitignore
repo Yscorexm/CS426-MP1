@@ -1,0 +1,6 @@
+*.o
+src/lexer
+src/parser
+temp/*
+!reference-binaries/coolrt.o
+
