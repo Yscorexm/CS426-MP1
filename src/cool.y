@@ -260,6 +260,8 @@ let     : OBJECTID ':' TYPEID optional_assign IN expr
                 { $$ = let($1, $3, $4, $6); }
         | error let
                 { yyerrok; $$ = $2; }
+        | error IN expr
+                { yyerrok; $$ = NULL; }
         ;
 
 optional_assign
