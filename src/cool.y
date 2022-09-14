@@ -236,6 +236,7 @@ expr_list
 stmts   : stmts stmt
                 { $$ = append_Expressions($1, single_Expressions($2)); }
         | stmt  { $$ = single_Expressions($1); }
+        | error { $$ = NULL; }
         ;
 
 stmt    : expr ';'

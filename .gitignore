@@ -3,4 +3,5 @@ src/lexer
 src/parser
 temp/*
 !reference-binaries/coolrt.o
-
+cool.output
+cool-parse.cc
